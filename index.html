@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="Tecnología y productos importados seleccionados. Descubrí tu próximo favorito y coordiná tu compra por WhatsApp.">
+  <title>Nexo — Tecnología para todos los días</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline"><span>BUENOS AIRES · ARGENTINA</span><span>Envíos a todo el país <i>✳</i> Atención personalizada</span></div>
+  <header class="header">
+    <a href="#inicio" class="brand" aria-label="Nexo, inicio"><img class="brand-logo" src="assets/nexo-logo.png" alt="Nexo Importaciones"></a>
+    <nav class="nav" aria-label="Navegación principal"><a href="#productos">Tienda</a><a href="#beneficios">Cómo comprar</a></nav>
+    <div class="header-actions">
+      <label class="search" aria-label="Buscar productos"><span>⌕</span><input id="searchInput" type="search" placeholder="¿Qué estás buscando?"></label>
+      <button class="cart-button" id="openCartBtn" aria-label="Abrir carrito">Mi carrito <span id="cartCount">0</span></button>
+    </div>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy"><span class="pill"><i></i> SELECCIÓN INTERNACIONAL</span><h1>Pequeños detalles.<br><em>Grandes ideas.</em></h1><p>Encontrá tecnología y accesorios elegidos para hacer más simple —y más tuyo— cada día.</p><a href="#productos" class="hero-cta">Descubrir la tienda <span>↘</span></a><div class="hero-foot"><span>01 — 05</span><span>TECNOLOGÍA · ACCESORIOS · INNOVACIÓN</span></div></div>
+      <div class="hero-visual"><div class="hero-shape" aria-hidden="true"></div><div class="hero-circle circle-a" aria-hidden="true"></div><div class="hero-circle circle-b" aria-hidden="true"></div><span class="hero-star" aria-hidden="true">✳</span><span class="hero-label" aria-hidden="true">OBJETOS<br>CON PROPÓSITO</span><div class="hero-card" id="heroCarousel" role="region" aria-roledescription="carrusel" aria-label="Novedades de Nexo"><article class="hero-slide is-active" aria-roledescription="diapositiva" aria-label="1 de 3"><span>01 / QUIÉNES SOMOS</span><strong>Importamos con<br>una idea clara.</strong><p>Acercarte tecnología útil, accesorios con diseño y novedades que valen la pena.</p><b>ESA ES NUESTRA CONEXIÓN.</b></article><article class="hero-slide" aria-roledescription="diapositiva" aria-label="2 de 3" hidden><span>02 / ELEGIDOS PARA VOS</span><strong>Un buen producto<br>cambia el día.</strong><p>Descubrí opciones prácticas, actuales y seleccionadas para acompañarte.</p><a class="slide-cta" href="#productos">Ver productos <span>↗</span></a></article><article class="hero-slide" aria-roledescription="diapositiva" aria-label="3 de 3" hidden><span>03 / NEXO PICKS</span><strong>Lo que necesitas<br>está más cerca<br><em>de lo que<br>parece.</em></strong><b>BUEN DISEÑO. MEJOR TECNOLOGÍA.</b></article></div><div class="carousel-controls" aria-label="Controles del carrusel"><button id="heroPrev" class="carousel-arrow" aria-label="Diapositiva anterior">←</button><span id="heroPosition" aria-live="polite">01 <i>/ 03</i></span><button id="heroNext" class="carousel-arrow" aria-label="Diapositiva siguiente">→</button></div></div>
+    </section>
+    <section class="benefit-row" id="beneficios"><div><span class="benefit-num">01</span><span><b>Selección curada</b><small>Calidad y diseño en cada producto</small></span></div><div><span class="benefit-num">02</span><span><b>Compra simple</b><small>Coordiná tu pedido por WhatsApp</small></span></div><div><span class="benefit-num">03</span><span><b>Llegamos a vos</b><small>Envíos a todo el país</small></span></div></section>
+    <section class="shop" id="productos">
+      <div class="section-head"><div><span class="section-kicker">OBJETOS QUE SUMAN</span><h2>Encontrá tu próximo favorito<span>.</span></h2></div><label class="sort">Ordenar <select id="sortSelect"><option value="featured">Destacados</option><option value="price-asc">Menor precio</option><option value="price-desc">Mayor precio</option><option value="name">Nombre</option></select></label></div>
+      <div class="product-grid" id="productsGrid" aria-live="polite"></div>
+      <div id="noResults" class="no-results" hidden>No encontramos productos con esa búsqueda. Probá con otra palabra.</div>
+    </section>
+    <section class="bottom-banner"><div><span class="section-kicker">¿TENÉS UNA CONSULTA?</span><h2>Estamos para ayudarte.</h2></div><a href="#" id="whatsappBtn" target="_blank" rel="noopener">Escribinos por WhatsApp <span>↗</span></a></section>
+  </main>
+  <footer><a href="#inicio" class="brand footer-brand"><img class="brand-logo" src="assets/nexo-logo.png" alt="Nexo Importaciones"></a><span>© <span id="year"></span> Nexo Importaciones</span><a href="#inicio">Volver arriba ↑</a></footer>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Tu carrito" aria-hidden="true"><div class="drawer-head"><div><span class="section-kicker">TU SELECCIÓN</span><h2>Mi carrito <span class="cart-total-count" id="panelCount">0</span></h2></div><button id="closeCartBtn" class="close-drawer" aria-label="Cerrar carrito">×</button></div><div id="cartItems" class="cart-items"></div><div id="cartEmpty" class="cart-empty"><span>✳</span><b>Tu carrito está esperando</b><small>Sumá tus productos favoritos para empezar.</small></div><div class="drawer-bottom"><div class="total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div><p>El envío y los medios de pago se coordinan al confirmar tu pedido.</p><button id="checkoutBtn" class="checkout">Continuar por WhatsApp <span>↗</span></button><button id="clearCartBtn" class="clear-cart">Vaciar carrito</button></div></aside>
+  <div id="scrim" class="scrim"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
