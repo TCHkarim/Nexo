@@ -1,9 +1,9 @@
 const WHATSAPP_NUMBER='5493515291401';
 const PRODUCTS=[
- {id:'p1',name:'Auriculares Pro X',category:'Audio',price:24999,image:'assets/auriculares-pro-x.png',fallback:'🎧',tag:'MÁS VENDIDO',description:'Cancelación de ruido · Bluetooth'},
+ {id:'p1',name:'Auriculares Pro X',category:'Audio',price:24999,image:'auriculares-pro-x.png',fallback:'🎧',tag:'MÁS VENDIDO',description:'Cancelación de ruido · Bluetooth'},
  {id:'p2',name:'Teclado mecánico RGB',category:'Accesorios',price:19999,image:'https://images.unsplash.com/photo-1674621703172-ef68b33e52da?auto=format&fit=crop&w=720&q=85',fallback:'⌨️',tag:'SELECCIÓN',description:'Switches táctiles · RGB'},
  {id:'p3',name:'Mouse Gamer Pro',category:'Accesorios',price:8999,image:'https://images.unsplash.com/photo-1636489891987-c4eb210e23d2?auto=format&fit=crop&w=720&q=85',fallback:'🖱️',tag:'PRECIO ESPECIAL',description:'Alta precisión · Ergonómico'},
- {id:'p4',name:'Cargador USB-C 65W',category:'Energía',price:6999,image:'assets/cargador-usb-c-65w.png',fallback:'⚡',tag:'COMPACTO',description:'Carga rápida · 65W'},
+ {id:'p4',name:'Cargador USB-C 65W',category:'Energía',price:6999,image:'cargador-usb-c-65w.png',fallback:'⚡',tag:'COMPACTO',description:'Carga rápida · 65W'},
  {id:'p5',name:'SSD NVMe 1TB',category:'Almacenamiento',price:17999,image:'https://images.unsplash.com/photo-1669480380758-4b163a33f6f9?auto=format&fit=crop&w=720&q=85',fallback:'💾',tag:'ALTO RENDIMIENTO',description:'NVMe · 1TB'}
 ];
 const CART_KEY='nexo_negocios_cart_v1';
@@ -34,3 +34,4 @@ $('#heroCarousel').addEventListener('mouseleave',startHeroTimer);
 $('#heroCarousel').addEventListener('focusin',stopHeroTimer);
 $('#heroCarousel').addEventListener('focusout',startHeroTimer);
 showHeroSlide(0);startHeroTimer();
+
