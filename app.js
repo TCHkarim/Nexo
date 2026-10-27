@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER='5493515291401';
+const WHATSAPP_NUMBER='5493512065139';
 const PRODUCTS=[
  {id:'p1',name:'Auriculares Pro X',category:'Audio',price:24999,image:'auriculares-pro-x.png',fallback:'🎧',tag:'MÁS VENDIDO',description:'Cancelación de ruido · Bluetooth'},
  {id:'p2',name:'Teclado mecánico RGB',category:'Accesorios',price:19999,image:'https://images.unsplash.com/photo-1674621703172-ef68b33e52da?auto=format&fit=crop&w=720&q=85',fallback:'⌨️',tag:'SELECCIÓN',description:'Switches táctiles · RGB'},
@@ -34,4 +34,5 @@ $('#heroCarousel').addEventListener('mouseleave',startHeroTimer);
 $('#heroCarousel').addEventListener('focusin',stopHeroTimer);
 $('#heroCarousel').addEventListener('focusout',startHeroTimer);
 showHeroSlide(0);startHeroTimer();
+
 
